@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>psd to html</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/main.css" type="text/css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-menu">
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Investor</a></li>
+                    <li><a href="">Advertise</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href=""><img src="dist/assets/icon-profile.png" alt="profile-logo"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="intro-text">
+            <img src="dist/assets/intro-text.png" alt="For Those Who Love It, Find your desired property">
+        </div>
+    </header>
+    <main>
+        <section class="main-search">
+            <div class="container">
+                <div class="search">
+                    <input class="countries" type="search" list="countries" placeholder="Country">
+                    <datalist id="countries">
+                        <option value="Saint Helena">Saint Helena</option>
+                        <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                        <option value="Saint Lucia">Saint Lucia</option>
+                        <option value="Saint Pierre">Saint Pierre</option>
+                        <option value="Saint Vincent">Saint Vincent</option>
+                    </datalist>
+                    <input class="cities" type="search" list="cities" placeholder="City">
+                    <datalist id="cities">
+                        <option value="Helena">Helena</option>
+                        <option value="Kitts and Nevis">Kitts and Nevis</option>
+                        <option value="Lucia">Lucia</option>
+                        <option value="Pierre">Pierre</option>
+                        <option value="Vincent">Vincent</option>
+                    </datalist>
+                    <input class="propertyAge" type="search" list="propertyAge" placeholder="Property Age">
+                    <datalist id="propertyAge">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                    </datalist>
+                    <input class="minprice" type="number" name="minprice" placeholder="Min Price">
+                    <input class="maxprice" type="number" name="maxprice" placeholder="Max Price">
+                    <input class="pricesqft" type="number" name="pricesqft" placeholder="Price/Sqft">
+                    <input class="minsqft" type="number" name="minsqft" placeholder="Min Sqft">
+                    <input class="maxsqft" type="number" name="maxsqft" placeholder="Max Sqft">
+                    <input class="rooms" type="number" name="rooms" placeholder="Rooms">
+                    <input class="baths" type="number" name="baths" placeholder="Baths">
+                    <button class="submit" type="submit">SEARCH</button>
+                </div>
+                <div class="take-a-email">
+                    <div class="email-text">
+                        <h3 class="email-big-text">Can't find the result you seek?</h3>
+                        <h6 class="email-small-text">SET EMAIL ALERTS FOR YOUR PREFERRED FILTER</h6>
+                    </div>
+                    <div class="email-submit">
+                        <input class="enteremail" type="text" name="enteremail" placeholder="Enter Your email...">
+                        <button class="email-submit-btn">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sponsoredlist container">
+            <h2 class="sponsoredtext text-center">Sponsored Listings</h2>
+            <div class="grid">
+                <!-- HEADER -->
+                <a href="">
+                    <div class="grid-header">
+                        <p class="h-picture">Picture</p>
+                        <p class="h-projectname">Project Name</p>
+                        <p class="h-country">Country</p>
+                        <p class="h-city">City</p>
+                        <p class="h-newold">New/Old</p>
+                        <p class="h-price">Price</p>
+                        <p class="h-pricesqft">Price/Sqft</p>
+                        <p class="h-sqft">Sqft</p>
+                        <p class="h-rooms">Rooms</p>
+                        <p class="h-baths">Baths</p>
+                        <p class="h-website">Website</p>
+                        <p class="h-contact">Contact</p>
+                        <p class="h-phone">Phone</p>
+                    </div>
+                </a>
+                <!-- ROW -->
+                <a href="">
+                    <div class="grid-main" id="special">
+                        <p class="picture"></p>
+                        <p class="projectname"></p>
+                        <p class="country"></p>
+                        <p class="city"></p>
+                        <p class="newold"></p>
+                        <p class="price"></p>
+                        <p class="pricesqft"></p>
+                        <p class="sqft"></p>
+                        <p class="rooms"></p>
+                        <p class="baths"></p>
+                        <p class="website"></p>
+                        <p class="contact"></p>
+                        <p class="phone"></p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="grid-main">
+                        <img class="picture" src="dist/assets/lay1.png" alt="Project Picture">
+                        <p class="projectname"><span class="mobile-toggle"><b>Project Name</b><br /></span>Godrej Properties</p>
+                        <p class="country"><span class="mobile-toggle"><b>Country</b><br /></span>India</p>
+                        <p class="city"><span class="mobile-toggle"><b>City</b><br /></span>Delhi</p>
+                        <p class="newold"><span class="mobile-toggle"><b>New/Old</b><br /></span>New</p>
+                        <p class="price"><span class="mobile-toggle"><b>Price</b><br /></span>$20.5L</p>
+                        <p class="pricesqft"><span class="mobile-toggle"><b>Price/Sqft</b><br /></span>$200.00</p>
+                        <p class="sqft"><span class="mobile-toggle"><b>Sqft</b><br /></span>3.000</p>
+                        <p class="rooms"><span class="mobile-toggle"><b>Rooms</b><br /></span>3</p>
+                        <p class="baths"><span class="mobile-toggle"><b>Baths</b><br /></span>2</p>
+                        <p class="website"><span class="mobile-toggle"><b>Website</b><br /></span>www.godrejproperties.com</p>
+                        <p class="contact"><span class="mobile-toggle"><b>Contact</b><br /></span>(873) 297-6426</p>
+                        <p class="phone"><span class="mobile-toggle"><b>Phone</b><br /></span>(248)566-5637</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="grid-main">
+                        <img class="picture" src="dist/assets/lay2.png" alt="Project Picture">
+                        <p class="projectname"><span class="mobile-toggle"><b>Project Name</b><br /></span>Kalpataru Group</p>
+                        <p class="country"><span class="mobile-toggle"><b>Country</b><br /></span>Colombia</p>
+                        <p class="city"><span class="mobile-toggle"><b>City</b><br /></span>Pimouth</p>
+                        <p class="newold"><span class="mobile-toggle"><b>New/Old</b><br /></span>Old</p>
+                        <p class="price"><span class="mobile-toggle"><b>Price</b><br /></span>$20.5L</p>
+                        <p class="pricesqft"><span class="mobile-toggle"><b>Price/Sqft</b><br /></span>$200.00</p>
+                        <p class="sqft"><span class="mobile-toggle"><b>Sqft</b><br /></span>3.000</p>
+                        <p class="rooms"><span class="mobile-toggle"><b>Rooms</b><br /></span>3</p>
+                        <p class="baths"><span class="mobile-toggle"><b>Baths</b><br /></span>2</p>
+                        <p class="website"><span class="mobile-toggle"><b>Website</b><br /></span>www.godrejproperties.com</p>
+                        <p class="contact"><span class="mobile-toggle"><b>Contact</b><br /></span>(873) 297-6426</p>
+                        <p class="phone"><span class="mobile-toggle"><b>Phone</b><br /></span>(248)566-5637</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="grid-main">
+                        <img class="picture" src="dist/assets/lay3.png" alt="Project Picture">
+                        <p class="projectname"><span class="mobile-toggle"><b>Project Name</b><br /></span>VTP Reality</p>
+                        <p class="country"><span class="mobile-toggle"><b>Country</b><br /></span>Curacao</p>
+                        <p class="city"><span class="mobile-toggle"><b>City</b><br /></span>Egiocaster</p>
+                        <p class="newold"><span class="mobile-toggle"><b>New/Old</b><br /></span>New</p>
+                        <p class="price"><span class="mobile-toggle"><b>Price</b><br /></span>$20.5L</p>
+                        <p class="pricesqft"><span class="mobile-toggle"><b>Price/Sqft</b><br /></span>$200.00</p>
+                        <p class="sqft"><span class="mobile-toggle"><b>Sqft</b><br /></span>3.000</p>
+                        <p class="rooms"><span class="mobile-toggle"><b>Rooms</b><br /></span>3</p>
+                        <p class="baths"><span class="mobile-toggle"><b>Baths</b><br /></span>2</p>
+                        <p class="website"><span class="mobile-toggle"><b>Website</b><br /></span>www.godrejproperties.com</p>
+                        <p class="contact"><span class="mobile-toggle"><b>Contact</b><br /></span>(873) 297-6426</p>
+                        <p class="phone"><span class="mobile-toggle"><b>Phone</b><br /></span>(248)566-5637</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="grid-main">
+                        <img class="picture" src="dist/assets/lay4.png" alt="Project Picture">
+                        <p class="projectname"><span class="mobile-toggle"><b>Project Name</b><br /></span>Lokha Group</p>
+                        <p class="country"><span class="mobile-toggle"><b>Country</b><br /></span>South Africa</p>
+                        <p class="city"><span class="mobile-toggle"><b>City</b><br /></span>Blifshire</p>
+                        <p class="newold"><span class="mobile-toggle"><b>New/Old</b><br /></span>New</p>
+                        <p class="price"><span class="mobile-toggle"><b>Price</b><br /></span>$20.5L</p>
+                        <p class="pricesqft"><span class="mobile-toggle"><b>Price/Sqft</b><br /></span>$200.00</p>
+                        <p class="sqft"><span class="mobile-toggle"><b>Sqft</b><br /></span>3.000</p>
+                        <p class="rooms"><span class="mobile-toggle"><b>Rooms</b><br /></span>3</p>
+                        <p class="baths"><span class="mobile-toggle"><b>Baths</b><br /></span>2</p>
+                        <p class="website"><span class="mobile-toggle"><b>Website</b><br /></span>www.godrejproperties.com</p>
+                        <p class="contact"><span class="mobile-toggle"><b>Contact</b><br /></span>(873) 297-6426</p>
+                        <p class="phone"><span class="mobile-toggle"><b>Phone</b><br /></span>(248)566-5637</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="grid-main">
+                        <img class="picture" src="dist/assets/lay5.png" alt="Project Picture">
+                        <p class="projectname"><span class="mobile-toggle"><b>Project Name</b><br /></span>Kanakia Spaces Realty</p>
+                        <p class="country"><span class="mobile-toggle"><b>Country</b><br /></span>Azerbaijan</p>
+                        <p class="city"><span class="mobile-toggle"><b>City</b><br /></span>Posey</p>
+                        <p class="newold"><span class="mobile-toggle"><b>New/Old</b><br /></span>Old</p>
+                        <p class="price"><span class="mobile-toggle"><b>Price</b><br /></span>$20.5L</p>
+                        <p class="pricesqft"><span class="mobile-toggle"><b>Price/Sqft</b><br /></span>$200.00</p>
+                        <p class="sqft"><span class="mobile-toggle"><b>Sqft</b><br /></span>3.000</p>
+                        <p class="rooms"><span class="mobile-toggle"><b>Rooms</b><br /></span>3</p>
+                        <p class="baths"><span class="mobile-toggle"><b>Baths</b><br /></span>2</p>
+                        <p class="website"><span class="mobile-toggle"><b>Website</b><br /></span>www.godrejproperties.com</p>
+                        <p class="contact"><span class="mobile-toggle"><b>Contact</b><br /></span>(873) 297-6426</p>
+                        <p class="phone"><span class="mobile-toggle"><b>Phone</b><br /></span>(248)566-5637</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="grid-main">
+                        <img class="picture" src="dist/assets/lay6.png" alt="Project Picture">
+                        <p class="projectname"><span class="mobile-toggle"><b>Project Name</b><br /></span>Ashoka Developers<br> And Builders</p>
+                        <p class="country"><span class="mobile-toggle"><b>Country</b><br /></span>Liberia</p>
+                        <p class="city"><span class="mobile-toggle"><b>City</b><br /></span>Ubison</p>
+                        <p class="newold"><span class="mobile-toggle"><b>New/Old</b><br /></span>New</p>
+                        <p class="price"><span class="mobile-toggle"><b>Price</b><br /></span>$20.5L</p>
+                        <p class="pricesqft"><span class="mobile-toggle"><b>Price/Sqft</b><br /></span>$200.00</p>
+                        <p class="sqft"><span class="mobile-toggle"><b>Sqft</b><br /></span>3.000</p>
+                        <p class="rooms"><span class="mobile-toggle"><b>Rooms</b><br /></span>3</p>
+                        <p class="baths"><span class="mobile-toggle"><b>Baths</b><br /></span>2</p>
+                        <p class="website"><span class="mobile-toggle"><b>Website</b><br /></span>www.godrejproperties.com</p>
+                        <p class="contact"><span class="mobile-toggle"><b>Contact</b><br /></span>(873) 297-6426</p>
+                        <p class="phone"><span class="mobile-toggle"><b>Phone</b><br /></span>(248)566-5637</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="grid-main">
+                        <img class="picture" src="dist/assets/lay7.png" alt="Project Picture">
+                        <p class="projectname"><span class="mobile-toggle"><b>Project Name</b><br /></span>Damac Properties UAE</p>
+                        <p class="country"><span class="mobile-toggle"><b>Country</b><br /></span>Puerto Rico</p>
+                        <p class="city"><span class="mobile-toggle"><b>City</b><br /></span>Trila</p>
+                        <p class="newold"><span class="mobile-toggle"><b>New/Old</b><br /></span>Old</p>
+                        <p class="price"><span class="mobile-toggle"><b>Price</b><br /></span>$20.5L</p>
+                        <p class="pricesqft"><span class="mobile-toggle"><b>Price/Sqft</b><br /></span>$200.00</p>
+                        <p class="sqft"><span class="mobile-toggle"><b>Sqft</b><br /></span>3.000</p>
+                        <p class="rooms"><span class="mobile-toggle"><b>Rooms</b><br /></span>3</p>
+                        <p class="baths"><span class="mobile-toggle"><b>Baths</b><br /></span>2</p>
+                        <p class="website"><span class="mobile-toggle"><b>Website</b><br /></span>www.godrejproperties.com</p>
+                        <p class="contact"><span class="mobile-toggle"><b>Contact</b><br /></span>(873) 297-6426</p>
+                        <p class="phone"><span class="mobile-toggle"><b>Phone</b><br /></span>(248)566-5637</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="grid-main">
+                        <img class="picture" src="dist/assets/lay8.png" alt="Project Picture">
+                        <p class="projectname"><span class="mobile-toggle"><b>Project Name</b><br /></span>Gadrej Properties</p>
+                        <p class="country"><span class="mobile-toggle"><b>Country</b><br /></span>Mauritania</p>
+                        <p class="city"><span class="mobile-toggle"><b>City</b><br /></span>Akaham</p>
+                        <p class="newold"><span class="mobile-toggle"><b>New/Old</b><br /></span>New</p>
+                        <p class="price"><span class="mobile-toggle"><b>Price</b><br /></span>$20.5L</p>
+                        <p class="pricesqft"><span class="mobile-toggle"><b>Price/Sqft</b><br /></span>$200.00</p>
+                        <p class="sqft"><span class="mobile-toggle"><b>Sqft</b><br /></span>3.000</p>
+                        <p class="rooms"><span class="mobile-toggle"><b>Rooms</b><br /></span>3</p>
+                        <p class="baths"><span class="mobile-toggle"><b>Baths</b><br /></span>2</p>
+                        <p class="website"><span class="mobile-toggle"><b>Website</b><br /></span>www.godrejproperties.com</p>
+                        <p class="contact"><span class="mobile-toggle"><b>Contact</b><br /></span>(873) 297-6426</p>
+                        <p class="phone"><span class="mobile-toggle"><b>Phone</b><br /></span>(248)566-5637</p>
+                    </div>
+                </a>
+            </div>
+            <button class="sponsored-btn text-center" type="submit">ADD SPONSORED LISTING FOR <b>$99</b></button>
+        </section>
+        <hr>
+        <section class="sponsoredlist free">
+            <h2 class="sponsoredtext text-center">Free Listings</h2>
+            <div class="grid">
+                <!-- HEADER -->
+                <a href="">
+                    <div class="grid-header">
+                        <p class="h-picture">Picture</p>
+                        <p class="h-projectname">Project Name</p>
+                        <p class="h-country">Country</p>
+                        <p class="h-city">City</p>
+                        <p class="h-newold">New/Old</p>
+                        <p class="h-price">Price</p>
+                        <p class="h-pricesqft">Price/Sqft</p>
+                        <p class="h-sqft">Sqft</p>
+                        <p class="h-rooms">Rooms</p>
+                        <p class="h-baths">Baths</p>
+                        <p class="h-website">Website</p>
+                        <p class="h-contact">Contact</p>
+                        <p class="h-phone">Phone</p>
+                    </div>
+                </a>
+                <!-- ROW -->
+                <a href="">
+                    <div class="grid-main" id="special">
+                        <p class="picture"></p>
+                        <p class="projectname"></p>
+                        <p class="country"></p>
+                        <p class="city"></p>
+                        <p class="newold"></p>
+                        <p class="price"></p>
+                        <p class="pricesqft"></p>
+                        <p class="sqft"></p>
+                        <p class="rooms"></p>
+                        <p class="baths"></p>
+                        <p class="website"></p>
+                        <p class="contact"></p>
+                        <p class="phone"></p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="grid-main">
+                        <img class="picture" src="dist/assets/lay1.png" alt="Project Picture">
+                        <p class="projectname"><span class="mobile-toggle"><b>Project Name</b><br /></span>Godrej Properties</p>
+                        <p class="country"><span class="mobile-toggle"><b>Country</b><br /></span>India</p>
+                        <p class="city"><span class="mobile-toggle"><b>City</b><br /></span>Delhi</p>
+                        <p class="newold"><span class="mobile-toggle"><b>New/Old</b><br /></span>New</p>
+                        <p class="price"><span class="mobile-toggle"><b>Price</b><br /></span>$20.5L</p>
+                        <p class="pricesqft"><span class="mobile-toggle"><b>Price/Sqft</b><br /></span>$200.00</p>
+                        <p class="sqft"><span class="mobile-toggle"><b>Sqft</b><br /></span>3.000</p>
+                        <p class="rooms"><span class="mobile-toggle"><b>Rooms</b><br /></span>3</p>
+                        <p class="baths"><span class="mobile-toggle"><b>Baths</b><br /></span>2</p>
+                        <p class="website"><span class="mobile-toggle"><b>Website</b><br /></span>www.godrejproperties.com</p>
+                        <p class="contact"><span class="mobile-toggle"><b>Contact</b><br /></span>(873) 297-6426</p>
+                        <p class="phone"><span class="mobile-toggle"><b>Phone</b><br /></span>(248)566-5637</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="grid-main">
+                        <img class="picture" src="dist/assets/lay2.png" alt="Project Picture">
+                        <p class="projectname"><span class="mobile-toggle"><b>Project Name</b><br /></span>Kalpataru Group</p>
+                        <p class="country"><span class="mobile-toggle"><b>Country</b><br /></span>Colombia</p>
+                        <p class="city"><span class="mobile-toggle"><b>City</b><br /></span>Pimouth</p>
+                        <p class="newold"><span class="mobile-toggle"><b>New/Old</b><br /></span>Old</p>
+                        <p class="price"><span class="mobile-toggle"><b>Price</b><br /></span>$20.5L</p>
+                        <p class="pricesqft"><span class="mobile-toggle"><b>Price/Sqft</b><br /></span>$200.00</p>
+                        <p class="sqft"><span class="mobile-toggle"><b>Sqft</b><br /></span>3.000</p>
+                        <p class="rooms"><span class="mobile-toggle"><b>Rooms</b><br /></span>3</p>
+                        <p class="baths"><span class="mobile-toggle"><b>Baths</b><br /></span>2</p>
+                        <p class="website"><span class="mobile-toggle"><b>Website</b><br /></span>www.godrejproperties.com</p>
+                        <p class="contact"><span class="mobile-toggle"><b>Contact</b><br /></span>(873) 297-6426</p>
+                        <p class="phone"><span class="mobile-toggle"><b>Phone</b><br /></span>(248)566-5637</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="grid-main">
+                        <img class="picture" src="dist/assets/lay3.png" alt="Project Picture">
+                        <p class="projectname"><span class="mobile-toggle"><b>Project Name</b><br /></span>VTP Reality</p>
+                        <p class="country"><span class="mobile-toggle"><b>Country</b><br /></span>Curacao</p>
+                        <p class="city"><span class="mobile-toggle"><b>City</b><br /></span>Egiocaster</p>
+                        <p class="newold"><span class="mobile-toggle"><b>New/Old</b><br /></span>New</p>
+                        <p class="price"><span class="mobile-toggle"><b>Price</b><br /></span>$20.5L</p>
+                        <p class="pricesqft"><span class="mobile-toggle"><b>Price/Sqft</b><br /></span>$200.00</p>
+                        <p class="sqft"><span class="mobile-toggle"><b>Sqft</b><br /></span>3.000</p>
+                        <p class="rooms"><span class="mobile-toggle"><b>Rooms</b><br /></span>3</p>
+                        <p class="baths"><span class="mobile-toggle"><b>Baths</b><br /></span>2</p>
+                        <p class="website"><span class="mobile-toggle"><b>Website</b><br /></span>www.godrejproperties.com</p>
+                        <p class="contact"><span class="mobile-toggle"><b>Contact</b><br /></span>(873) 297-6426</p>
+                        <p class="phone"><span class="mobile-toggle"><b>Phone</b><br /></span>(248)566-5637</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="grid-main">
+                        <img class="picture" src="dist/assets/lay4.png" alt="Project Picture">
+                        <p class="projectname"><span class="mobile-toggle"><b>Project Name</b><br /></span>Lokha Group</p>
+                        <p class="country"><span class="mobile-toggle"><b>Country</b><br /></span>South Africa</p>
+                        <p class="city"><span class="mobile-toggle"><b>City</b><br /></span>Blifshire</p>
+                        <p class="newold"><span class="mobile-toggle"><b>New/Old</b><br /></span>New</p>
+                        <p class="price"><span class="mobile-toggle"><b>Price</b><br /></span>$20.5L</p>
+                        <p class="pricesqft"><span class="mobile-toggle"><b>Price/Sqft</b><br /></span>$200.00</p>
+                        <p class="sqft"><span class="mobile-toggle"><b>Sqft</b><br /></span>3.000</p>
+                        <p class="rooms"><span class="mobile-toggle"><b>Rooms</b><br /></span>3</p>
+                        <p class="baths"><span class="mobile-toggle"><b>Baths</b><br /></span>2</p>
+                        <p class="website"><span class="mobile-toggle"><b>Website</b><br /></span>www.godrejproperties.com</p>
+                        <p class="contact"><span class="mobile-toggle"><b>Contact</b><br /></span>(873) 297-6426</p>
+                        <p class="phone"><span class="mobile-toggle"><b>Phone</b><br /></span>(248)566-5637</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="grid-main">
+                        <img class="picture" src="dist/assets/lay5.png" alt="Project Picture">
+                        <p class="projectname"><span class="mobile-toggle"><b>Project Name</b><br /></span>Kanakia Spaces Realty</p>
+                        <p class="country"><span class="mobile-toggle"><b>Country</b><br /></span>Azerbaijan</p>
+                        <p class="city"><span class="mobile-toggle"><b>City</b><br /></span>Posey</p>
+                        <p class="newold"><span class="mobile-toggle"><b>New/Old</b><br /></span>Old</p>
+                        <p class="price"><span class="mobile-toggle"><b>Price</b><br /></span>$20.5L</p>
+                        <p class="pricesqft"><span class="mobile-toggle"><b>Price/Sqft</b><br /></span>$200.00</p>
+                        <p class="sqft"><span class="mobile-toggle"><b>Sqft</b><br /></span>3.000</p>
+                        <p class="rooms"><span class="mobile-toggle"><b>Rooms</b><br /></span>3</p>
+                        <p class="baths"><span class="mobile-toggle"><b>Baths</b><br /></span>2</p>
+                        <p class="website"><span class="mobile-toggle"><b>Website</b><br /></span>www.godrejproperties.com</p>
+                        <p class="contact"><span class="mobile-toggle"><b>Contact</b><br /></span>(873) 297-6426</p>
+                        <p class="phone"><span class="mobile-toggle"><b>Phone</b><br /></span>(248)566-5637</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="grid-main">
+                        <img class="picture" src="dist/assets/lay6.png" alt="Project Picture">
+                        <p class="projectname"><span class="mobile-toggle"><b>Project Name</b><br /></span>Ashoka Developers<br> And Builders</p>
+                        <p class="country"><span class="mobile-toggle"><b>Country</b><br /></span>Liberia</p>
+                        <p class="city"><span class="mobile-toggle"><b>City</b><br /></span>Ubison</p>
+                        <p class="newold"><span class="mobile-toggle"><b>New/Old</b><br /></span>New</p>
+                        <p class="price"><span class="mobile-toggle"><b>Price</b><br /></span>$20.5L</p>
+                        <p class="pricesqft"><span class="mobile-toggle"><b>Price/Sqft</b><br /></span>$200.00</p>
+                        <p class="sqft"><span class="mobile-toggle"><b>Sqft</b><br /></span>3.000</p>
+                        <p class="rooms"><span class="mobile-toggle"><b>Rooms</b><br /></span>3</p>
+                        <p class="baths"><span class="mobile-toggle"><b>Baths</b><br /></span>2</p>
+                        <p class="website"><span class="mobile-toggle"><b>Website</b><br /></span>www.godrejproperties.com</p>
+                        <p class="contact"><span class="mobile-toggle"><b>Contact</b><br /></span>(873) 297-6426</p>
+                        <p class="phone"><span class="mobile-toggle"><b>Phone</b><br /></span>(248)566-5637</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="grid-main">
+                        <img class="picture" src="dist/assets/lay7.png" alt="Project Picture">
+                        <p class="projectname"><span class="mobile-toggle"><b>Project Name</b><br /></span>Damac Properties UAE</p>
+                        <p class="country"><span class="mobile-toggle"><b>Country</b><br /></span>Puerto Rico</p>
+                        <p class="city"><span class="mobile-toggle"><b>City</b><br /></span>Trila</p>
+                        <p class="newold"><span class="mobile-toggle"><b>New/Old</b><br /></span>Old</p>
+                        <p class="price"><span class="mobile-toggle"><b>Price</b><br /></span>$20.5L</p>
+                        <p class="pricesqft"><span class="mobile-toggle"><b>Price/Sqft</b><br /></span>$200.00</p>
+                        <p class="sqft"><span class="mobile-toggle"><b>Sqft</b><br /></span>3.000</p>
+                        <p class="rooms"><span class="mobile-toggle"><b>Rooms</b><br /></span>3</p>
+                        <p class="baths"><span class="mobile-toggle"><b>Baths</b><br /></span>2</p>
+                        <p class="website"><span class="mobile-toggle"><b>Website</b><br /></span>www.godrejproperties.com</p>
+                        <p class="contact"><span class="mobile-toggle"><b>Contact</b><br /></span>(873) 297-6426</p>
+                        <p class="phone"><span class="mobile-toggle"><b>Phone</b><br /></span>(248)566-5637</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="grid-main">
+                        <img class="picture" src="dist/assets/lay8.png" alt="Project Picture">
+                        <p class="projectname"><span class="mobile-toggle"><b>Project Name</b><br /></span>Gadrej Properties</p>
+                        <p class="country"><span class="mobile-toggle"><b>Country</b><br /></span>Mauritania</p>
+                        <p class="city"><span class="mobile-toggle"><b>City</b><br /></span>Akaham</p>
+                        <p class="newold"><span class="mobile-toggle"><b>New/Old</b><br /></span>New</p>
+                        <p class="price"><span class="mobile-toggle"><b>Price</b><br /></span>$20.5L</p>
+                        <p class="pricesqft"><span class="mobile-toggle"><b>Price/Sqft</b><br /></span>$200.00</p>
+                        <p class="sqft"><span class="mobile-toggle"><b>Sqft</b><br /></span>3.000</p>
+                        <p class="rooms"><span class="mobile-toggle"><b>Rooms</b><br /></span>3</p>
+                        <p class="baths"><span class="mobile-toggle"><b>Baths</b><br /></span>2</p>
+                        <p class="website"><span class="mobile-toggle"><b>Website</b><br /></span>www.godrejproperties.com</p>
+                        <p class="contact"><span class="mobile-toggle"><b>Contact</b><br /></span>(873) 297-6426</p>
+                        <p class="phone"><span class="mobile-toggle"><b>Phone</b><br /></span>(248)566-5637</p>
+                    </div>
+                </a>
+            </div>
+            <button class="sponsored-btn text-center" type="submit">ADD FREE LISTING</button>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="dist/js/menu-toggle.js" type="text/javascript"></script>
+</body>
+
+</html>

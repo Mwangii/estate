@@ -1,0 +1,24 @@
+[Oct 10 14:53:15] 
+[Oct 10 14:53:15] ==DUPLICATOR INSTALLER BOOTSTRAP v1.3.22==
+[Oct 10 14:53:15] ----------------------------------------------------
+[Oct 10 14:53:15] Installer bootstrap start
+[Oct 10 14:53:15] Using archive /home/indiamou/public_html/PROPERTIESTABLE.COM/20191010_houses_befb8986c9a5bff01237_20191010131022_archive.zip
+[Oct 10 14:53:15] Manual extract found so not going to extract dup-installer dir
+[Oct 10 14:53:15] ERROR: Didn't need to extract the installer.
+[Oct 10 14:53:15] Set permissions of /home/indiamou/public_html/PROPERTIESTABLE.COM/dup-installer to 0<br/>
+[Oct 10 14:53:15] Set permissions of /home/indiamou/public_html/PROPERTIESTABLE.COM/dup-installer/assets to 0<br/>
+[Oct 10 14:53:15] Set permissions of /home/indiamou/public_html/PROPERTIESTABLE.COM/dup-installer/classes to 0<br/>
+[Oct 10 14:53:15] Set permissions of /home/indiamou/public_html/PROPERTIESTABLE.COM/dup-installer/ctrls to 0<br/>
+[Oct 10 14:53:15] Set permissions of /home/indiamou/public_html/PROPERTIESTABLE.COM/dup-installer/favicon to 0<br/>
+[Oct 10 14:53:15] Set permissions of /home/indiamou/public_html/PROPERTIESTABLE.COM/dup-installer/lib to 0<br/>
+[Oct 10 14:53:15] Set permissions of /home/indiamou/public_html/PROPERTIESTABLE.COM/dup-installer/views to 0<br/>
+[Oct 10 14:53:15] Set permissions of /home/indiamou/public_html/PROPERTIESTABLE.COM/dup-installer/dup-archive__befb898-10131022.txt to 0<br/>
+[Oct 10 14:53:15] Set permissions of /home/indiamou/public_html/PROPERTIESTABLE.COM/dup-installer/dup-database__befb898-10131022.sql to 0<br/>
+[Oct 10 14:53:15] Set permissions of /home/indiamou/public_html/PROPERTIESTABLE.COM/dup-installer/dup-installer-csrf__befb898-10131022.txt to 0<br/>
+[Oct 10 14:53:15] Set permissions of /home/indiamou/public_html/PROPERTIESTABLE.COM/dup-installer/dup-installer-log__befb898-10131022.txt to 0<br/>
+[Oct 10 14:53:15] Set permissions of /home/indiamou/public_html/PROPERTIESTABLE.COM/dup-installer/dup-installer-notices__befb898-10131022.json to 0<br/>
+[Oct 10 14:53:15] Set permissions of /home/indiamou/public_html/PROPERTIESTABLE.COM/dup-installer/dup-scan__befb898-10131022.json to 0<br/>
+[Oct 10 14:53:15] Set permissions of /home/indiamou/public_html/PROPERTIESTABLE.COM/dup-installer/index.php to 0<br/>
+[Oct 10 14:53:15] Set permissions of /home/indiamou/public_html/PROPERTIESTABLE.COM/dup-installer/installer-state.txt to 0<br/>
+[Oct 10 14:53:15] Set permissions of /home/indiamou/public_html/PROPERTIESTABLE.COM/dup-installer/main.installer.php to 0<br/>
+[Oct 10 14:53:15] DONE: No detected errors so redirecting to the main installer. Main Installer URI = http://realtime9.com/PROPERTIESTABLE.COM/dup-installer/main.installer.php

@@ -1,0 +1,10 @@
+[10-Oct-2019 14:52:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp() in /home/indiamou/public_html/PROPERTIESTABLE.COM/wp-blog-header.php:16
+Stack trace:
+#0 /home/indiamou/public_html/PROPERTIESTABLE.COM/index.php(17): require()
+#1 {main}
+  thrown in /home/indiamou/public_html/PROPERTIESTABLE.COM/wp-blog-header.php on line 16
+[11-Oct-2019 07:40:58 UTC] PHP Warning:  Use of undefined constant picture - assumed 'picture' (this will throw an Error in a future version of PHP) in /home/indiamou/public_html/PROPERTIESTABLE.COM/wp-content/themes/valentin/front-page.php on line 97
+[11-Oct-2019 07:40:58 UTC] PHP Warning:  Use of undefined constant picture - assumed 'picture' (this will throw an Error in a future version of PHP) in /home/indiamou/public_html/PROPERTIESTABLE.COM/wp-content/themes/valentin/front-page.php on line 187
+[11-Oct-2019 07:40:58 UTC] PHP Warning:  Use of undefined constant picture - assumed 'picture' (this will throw an Error in a future version of PHP) in /home/indiamou/public_html/PROPERTIESTABLE.COM/wp-content/themes/valentin/front-page.php on line 187
+[11-Oct-2019 07:40:58 UTC] PHP Warning:  Use of undefined constant picture - assumed 'picture' (this will throw an Error in a future version of PHP) in /home/indiamou/public_html/PROPERTIESTABLE.COM/wp-content/themes/valentin/front-page.php on line 266
+[11-Oct-2019 07:40:58 UTC] PHP Warning:  Use of undefined constant picture - assumed 'picture' (this will throw an Error in a future version of PHP) in /home/indiamou/public_html/PROPERTIESTABLE.COM/wp-content/themes/valentin/front-page.php on line 266

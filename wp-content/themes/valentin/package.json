@@ -1,0 +1,45 @@
+{
+  "name": "shto-incredible-taskrunner",
+  "version": "1.0.6",
+  "description": "A simple task runner to increase productivity",
+  "scripts": {
+    "scss": "node-sass --output-style compressed -o dist/css src/scss",
+    "autoprefixer": "postcss --no-map -u autoprefixer -r dist/css/*",
+    "lint": "eslint src/js",
+    "uglify": "mkdirp dist/js -p && uglifyjs src/js/*.js -m -o dist/js/app.js",
+    "imagemin": "imagemin src/assets/* --out-dir=dist/assets",
+    "init": "browser-sync init",
+    "serve": "browser-sync start --config bs-config.js",
+    "build:css": "run-s scss autoprefixer",
+    "build:js": "run-s lint uglify",
+    "build:images": "run-s imagemin",
+    "build": "run-s build:*",
+    "watch:css": "onchange \"src/scss/\" -- run-s build:css",
+    "watch:js": "onchange \"src/js/*.js\" -- run-s build:js",
+    "watch:images": "onchange \"src/assets\" -- run-s build:images",
+    "watch": "run-p serve watch:*",
+    "watch-nojs": "run-s serve watch:css watch:images",
+    "postinstall": "mkdirp dist",
+    "not-ready-yet-postinstall": "mkdirp dist && create-html -t \"Task Runner\" -o dist/index.html"
+  },
+  "author": "stoica vladut mihai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sht0/task-runner"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "browser-sync": "^2.26.7",
+    "create-html": "^4.1.0",
+    "eslint": "^5.16.0",
+    "i": "^0.3.6",
+    "imagemin-cli": "^4.0.1",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^5.2.0",
+    "postcss-cli": "^6.1.2",
+    "uglify-js": "^3.5.15"
+  }
+}

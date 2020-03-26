@@ -1,0 +1,1 @@
+{"mode":1,"ovr_wp_content_dir":"\/home\/indiamou\/public_html\/PROPERTIESTABLE.COM\/wp-content"}

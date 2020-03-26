@@ -1,0 +1,330 @@
+:root {
+    font-size: 62.5%;
+}
+
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background-color: color(bg, 1);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+}
+
+body,
+footer,
+section {
+    width: 100%;
+}
+
+.container,
+.container-sm {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: get-content-padding(mobile);
+    padding-right: get-content-padding(mobile);
+
+    @include media('>small') {
+        padding-left: get-content-padding(desktop);
+        padding-right: get-content-padding(desktop);
+    }
+}
+
+.container {
+    max-width: $container__width + (get-content-padding(desktop)*2);
+}
+
+.container-sm {
+    max-width: $container__width-sm + (get-content-padding(desktop)*2);
+}
+
+.container {
+    .container-sm {
+        max-width: $container__width-sm;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    word-wrap: normal !important;
+    /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+
+    &:focus {
+        border-radius: 2px;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+        clip: auto !important;
+        display: block;
+        @include font-size(8, mobile, true, false, true);
+
+        @if (get-font-size(8, desktop) !=get-font-size(8, mobile)) {
+            @include media('>medium') {
+                @include font-size(8, desktop, true, false, true);
+            }
+        }
+
+        @include font-weight(bold);
+        text-transform: uppercase;
+        line-height: 16px;
+        text-decoration: none;
+        background-color: color(bg, 1);
+        color: color(primary, 1) !important;
+        border: none;
+        height: auto;
+        left: 8px;
+        padding: 16px 32px;
+        top: 8px;
+        width: auto;
+        z-index: 100000;
+    }
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.list-reset {
+    list-style: none;
+    padding: 0;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-primary {
+    color: color(primary, 1);
+}
+
+.text-secondary {
+    color: color(secondary, 1);
+}
+
+.has-top-divider {
+    @include divider(before);
+}
+
+.has-bottom-divider {
+    @include divider(after);
+}
+
+/* Add margin & padding on any screen size */
+
+@for $i from 0 through 8 {
+    .m-#{$i*8} {
+        margin: #{$i*8}px; // 0/8/16/24/32/40/48/56/64px;
+    }
+
+    .mt-#{$i*8} {
+        margin-top: #{$i*8}px;
+    }
+
+    .mr-#{$i*8} {
+        margin-right: #{$i*8}px;
+    }
+
+    .mb-#{$i*8} {
+        margin-bottom: #{$i*8}px;
+    }
+
+    .ml-#{$i*8} {
+        margin-left: #{$i*8}px;
+    }
+
+    .p-#{$i*8} {
+        padding: #{$i*8}px;
+    }
+
+    .pt-#{$i*8} {
+        padding-top: #{$i*8}px;
+    }
+
+    .pr-#{$i*8} {
+        padding-right: #{$i*8}px;
+    }
+
+    .pb-#{$i*8} {
+        padding-bottom: #{$i*8}px;
+    }
+
+    .pl-#{$i*8} {
+        padding-left: #{$i*8}px;
+    }
+}
+
+/* Add margin-top to free some space */
+// 64 - 128 - 192 - 256
+
+@for $i from 2 through 5 {
+    .mt-lg-#{$i*64} {
+        @include media('>=medium') {
+            margin-top: #{$i*64}px;
+        }
+    }
+}
+
+/* Add margin & padding on '>=medium' screen size */
+
+@for $i from 0 through 8 {
+    .m-lg-#{$i*8} {
+        @include media('>=medium') {
+            margin: #{$i*8}px;
+        }
+    }
+
+    .mt-lg-#{$i*8} {
+        @include media('>=medium') {
+            margin-top: #{$i*8}px;
+        }
+    }
+
+    .mr-lg-#{$i*8} {
+        @include media('>=medium') {
+            margin-right: #{$i*8}px;
+        }
+    }
+
+    .mb-lg-#{$i*8} {
+        @include media('>=medium') {
+            margin-bottom: #{$i*8}px;
+        }
+    }
+
+    .ml-lg-#{$i*8} {
+        @include media('>=medium') {
+            margin-left: #{$i*8}px;
+        }
+    }
+
+    .p-lg-#{$i*8} {
+        @include media('>=medium') {
+            padding: #{$i*8}px;
+        }
+    }
+
+    .pt-lg-#{$i*8} {
+        @include media('>=medium') {
+            padding-top: #{$i*8}px;
+        }
+    }
+
+    .pr-lg-#{$i*8} {
+        @include media('>=medium') {
+            padding-right: #{$i*8}px;
+        }
+    }
+
+    .pb-lg-#{$i*8} {
+        @include media('>=medium') {
+            padding-bottom: #{$i*8}px;
+        }
+    }
+
+    .pl-lg-#{$i*8} {
+        @include media('>=medium') {
+            padding-left: #{$i*8}px;
+        }
+    }
+}
+
+/* Add margin & padding on '<=medium' screen size */
+
+@for $i from 0 through 8 {
+    .m-sm-#{$i*8} {
+        @include media('<=medium') {
+            margin: #{$i*8}px;
+        }
+    }
+
+    .mt-sm-#{$i*8} {
+        @include media('<=medium') {
+            margin-top: #{$i*8}px;
+        }
+    }
+
+    .mr-sm-#{$i*8} {
+        @include media('<=medium') {
+            margin-right: #{$i*8}px;
+        }
+    }
+
+    .mb-sm-#{$i*8} {
+        @include media('<=medium') {
+            margin-bottom: #{$i*8}px;
+        }
+    }
+
+    .ml-sm-#{$i*8} {
+        @include media('<=medium') {
+            margin-left: #{$i*8}px;
+        }
+    }
+
+    .p-sm-#{$i*8} {
+        @include media('<=medium') {
+            padding: #{$i*8}px;
+        }
+    }
+
+    .pt-sm-#{$i*8} {
+        @include media('<=medium') {
+            padding-top: #{$i*8}px;
+        }
+    }
+
+    .pr-sm-#{$i*8} {
+        @include media('<=medium') {
+            padding-right: #{$i*8}px;
+        }
+    }
+
+    .pb-sm-#{$i*8} {
+        @include media('<=medium') {
+            padding-bottom: #{$i*8}px;
+        }
+    }
+
+    .pl-sm-#{$i*8} {
+        @include media('<=medium') {
+            padding-left: #{$i*8}px;
+        }
+    }
+}
+
+/* Change text-align property for '<=medium' screens. */
+
+.text-sm-center {
+    @include media('<=medium') {
+        text-align: center;
+    }
+}
+
+.text-sm-right {
+    @include media('<=medium') {
+        text-align: right;
+    }
+}
+
+.text-sm-left {
+    @include media('<=medium') {
+        text-align: left;
+    }
+}

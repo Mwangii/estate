@@ -1,0 +1,94 @@
+.search {
+    top: -120px;
+}
+.take-a-email {
+    margin-top: -40px;
+}
+main{	padding-bottom: 40px;}
+
+.header h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+	color:white;
+}
+
+.header .intro-text {
+    height: 58%;
+}
+
+.search button.submit {
+    border-radius: initial;
+	border: 2px solid #1a73e8;
+	background-color: initial;
+	color:black;
+}
+
+.take-a-email .email-submit-btn {
+    border-radius: initial;	
+	border: 2px solid #1a73e8;
+	background-color: initial;
+	color:black;
+}
+
+.sponsoredlist .sponsored-btn {
+	margin: 0 0 35px 0;
+    border-radius: initial;
+	border: 2px solid #1a73e8;
+	background-color: initial;
+	color:black;
+}
+.sponsoredlist .sponsoredtext {
+    margin: 50px 0 35px;
+}
+
+[type="submit"] {
+	-webkit-appearance: button;
+    height: 46px;
+    background-color: initial;
+    color: #fff;
+    border: none;
+    border-radius: initial;
+    margin: 10px 12px;
+	border: 2px solid #1a73e8;
+	color:black;
+}
+.main-search {
+    box-shadow: initial;
+}
+
+.grid-header {
+    font-weight: normal;
+}
+
+.grid a:hover {
+    font-weight: normal;
+}
+
+.tablesorter{
+	width:98%;
+	max-width:1300px;
+	text-align:center;
+	font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+.tablesorter th{
+	background-color: #f1f5f9;
+	padding :20px 20px 20px 0px;
+	font-weight:normal;
+}
+.tablesorter td{
+	padding :5px;
+	position:relative;
+}
+.tablesorter td img{
+	 margin: 0 auto;
+}
+.star:before {
+    content: url(http://realtime9.com/PROPERTIESTABLE.COM/wp-content/themes/valentin/dist/assets/premium.png);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}

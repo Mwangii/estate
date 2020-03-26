@@ -1,0 +1,148 @@
+.main-search {
+    -webkit-box-shadow: 0 8px 6px -6px color(typography, 3);
+    -moz-box-shadow: 0 8px 6px -6px color(typography, 3);
+    box-shadow: 0 8px 6px -6px color(typography, 3);
+}
+
+.search {
+    position: relative;
+    top: -15px;
+    min-height: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: color(typography, 1i);
+    border-radius: 6px;
+
+    input {
+        height: 45px;
+        border: 1.3px solid color(bg, 2);
+        padding: 0 10px;
+        @include font-size(7, mobile, true, true, true);
+
+        @include media('>medium') {
+            @include font-size(7, desktop, true, true, true);
+        }
+
+        &.countries {
+            max-width: 190px;
+            border-bottom-left-radius: 6px;
+            border-top-left-radius: 6px;
+        }
+
+        &.cities {
+            max-width: 170px;
+        }
+
+        &.propertyAge {
+            max-width: 125px;
+        }
+
+        &.minprice {
+            max-width: 90px;
+        }
+
+        &.maxprice {
+            max-width: 90px;
+        }
+
+        &.pricesqft {
+            max-width: 90px;
+        }
+
+        &.minsqft {
+            max-width: 85px;
+        }
+
+        &.maxsqft {
+            max-width: 85px;
+        }
+
+        &.rooms {
+            max-width: 75px;
+        }
+
+        &.baths {
+            max-width: 69px;
+        }
+    }
+
+    button.submit {
+        border: none;
+        border-radius: 6px;
+        background-color: color(secondary, 1);
+        color: color(typography, 1i);
+        max-width: 88px;
+        height: 39px;
+        margin: 0 auto;
+        cursor: pointer;
+        @include font-size(7, mobile, true, true, true);
+
+        @include media('>medium') {
+            @include font-size(7, desktop, true, true, true);
+        }
+
+        font-weight: lighter;
+    }
+}
+
+.take-a-email {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+
+    .email-big-text {
+        margin: 0;
+    }
+
+    .email-small-text {
+        margin: 0;
+        font-weight: 300;
+        @include font-size(8, mobile, true, true, true);
+
+        @include media('>medium') {
+            @include font-size(8, desktop, true, true, true);
+        }
+    }
+
+    input.enteremail {
+        margin: 0 10px;
+        padding: 0 10px;
+        width: 402px;
+        height: 46px;
+        border: none;
+        border-radius: 6px;
+        background-color: color(bg, 3);
+    }
+
+    .email-submit-btn {
+        width: 126px;
+        height: 46px;
+        background-color: color(secondary, 1);
+        color: color(typography, 1i);
+        border: none;
+        border-radius: 6px;
+    }
+}
+
+@include media('<medium') {
+    .take-a-email {
+        height: 240px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .email-submit {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .enteremail {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,295 @@
+.sponsoredlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .sponsoredtext {
+        margin: 50px 0 60px;
+    }
+
+    .sponsored-btn {
+        margin: 70px 0;
+        padding: 0 20px;
+        border: none;
+        border-radius: 6px;
+        background-color: color(secondary, 1);
+        color: color(typography, 1i);
+        max-width: 400px;
+        height: 48px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.free {
+    .grid-main:before {
+        content: '';
+    }
+}
+
+p {
+    margin: 0;
+}
+
+.mobile-toggle {
+    display: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 70px;
+
+    grid-template-areas:
+        "grid-header"
+        "grid-main";
+
+    a {
+        text-decoration: none;
+        color: color(typography, 1);
+        @include font-size(8, mobile, true, true, true);
+
+        @include media('>medium') {
+            @include font-size(8, desktop, true, true, true);
+
+            &:hover {
+                @include font-weight(semibold);
+
+                .projectname {
+                    color: color(secondary, 3);
+                }
+            }
+        }
+    }
+
+    img {
+        width: 74px;
+        height: 52px;
+        overflow: hidden;
+    }
+}
+
+.grid-header {
+    grid-area: grid-header;
+    display: grid;
+    grid-template-columns: minmax(auto, 79px) minmax(auto, 170px) minmax(auto, 90px) minmax(auto, 90px) minmax(auto, 80px) minmax(auto, 60px) minmax(auto, 90px) minmax(auto, 50px) minmax(auto, 80px) minmax(auto, 80px) minmax(auto, 200px) minmax(auto, 120px) minmax(auto, 120px);
+    grid-template-rows: 70px;
+    grid-template-areas:
+        "h-picture h-projectname h-country h-city h-newold h-price h-pricesqft h-sqft h-rooms h-baths h-website h-contact h-phone";
+
+    background-color: color(bg, 3);
+    font-weight: bold;
+
+    .h-picture {
+        grid-area: h-picture;
+    }
+
+    .h-projectname {
+        grid-area: h-projectname;
+    }
+
+    .h-country {
+        grid-area: h-country;
+    }
+
+    .h-city {
+        grid-area: h-city;
+    }
+
+    .h-newold {
+        grid-area: h-newold;
+    }
+
+    .h-price {
+        grid-area: h-price;
+    }
+
+    .h-pricesqft {
+        grid-area: h-pricesqft;
+    }
+
+    .h-sqft {
+        grid-area: h-sqft;
+    }
+
+    .h-rooms {
+        grid-area: h-rooms;
+    }
+
+    .h-baths {
+        grid-area: h-baths;
+    }
+
+    .h-website {
+        grid-area: h-website;
+    }
+
+    .h-contact {
+        grid-area: h-contact;
+    }
+
+    .h-phone {
+        grid-area: h-phone;
+    }
+
+    .h-picture,
+    .h-projectname,
+    .h-country,
+    .h-city,
+    .h-newold,
+    .h-price,
+    .h-pricesqft,
+    .h-sqft,
+    .h-rooms,
+    .h-baths,
+    .h-website,
+    .h-contact,
+    .h-phone {
+        place-self: center;
+    }
+}
+
+.grid-main:before {
+    content: url(../assets/premium.png);
+    position: absolute;
+}
+
+#special {
+    display: none;
+}
+
+.grid-main {
+    grid-area: grid-main;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 70px;
+    grid-template-areas:
+        "picture projectname country city newold price pricesqft sqft rooms baths website contact phone";
+
+
+    border-bottom: 1px solid color(bg, 2);
+    border-left: 1px solid color(bg, 2);
+    border-right: 1px solid color(bg, 2);
+
+    .picture {
+        grid-area: picture;
+    }
+
+    .projectname {
+        grid-area: projectname;
+    }
+
+    .country {
+        grid-area: country;
+    }
+
+    .city {
+        grid-area: city;
+    }
+
+    .newold {
+        grid-area: newold;
+    }
+
+    .price {
+        grid-area: price;
+    }
+
+    .pricesqft {
+        grid-area: pricesqft;
+    }
+
+    .sqft {
+        grid-area: sqft;
+    }
+
+    .rooms {
+        grid-area: rooms;
+    }
+
+    .baths {
+        grid-area: baths;
+    }
+
+    .website {
+        grid-area: website;
+    }
+
+    .contact {
+        grid-area: contact;
+    }
+
+    .phone {
+        grid-area: phone;
+    }
+
+    .picture,
+    .projectname,
+    .country,
+    .city,
+    .newold,
+    .price,
+    .pricesqft,
+    .sqft,
+    .rooms,
+    .baths,
+    .website,
+    .contact,
+    .phone {
+        place-self: center;
+    }
+}
+
+@include media('<large') {
+
+    .sponsoredlist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .sponsoredtext {
+            margin: 50px 0 0px;
+        }
+    }
+
+    .mobile-toggle {
+        display: inline;
+    }
+
+
+    .grid-header {
+        display: none;
+    }
+
+    .grid-main {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, 70px);
+        grid-template-areas:
+            "picture projectname country city newold price pricesqft"
+            "sqft rooms baths website website contact phone";
+
+        border-bottom: 2px solid color(typography, 1);
+        border-left: 1px solid color(bg, 2);
+        border-right: 1px solid color(bg, 2);
+
+    }
+}
+
+@include media('<medium') {
+
+    .grid-header {
+        display: none;
+    }
+
+    .grid-main {
+        grid-template-columns: auto;
+        grid-template-rows: 120px 70px 70px 70px;
+        grid-template-areas:
+            "picture projectname country city"
+            "newold price pricesqft sqft"
+            "rooms baths website website"
+            "contact contact phone phone";
+    }
+}

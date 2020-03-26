@@ -1,0 +1,128 @@
+.header {
+    height: 507px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/header-bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 60%;
+
+
+    .menu-toggle {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 500;
+        width: 100;
+        display: none;
+        height: 25px;
+        cursor: pointer;
+        transition: all 1s ease;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+
+        span {
+            position: relative;
+        }
+
+        span:after,
+        span:before {
+            position: absolute;
+            content: "";
+            top: 10px;
+        }
+
+        span:after {
+            top: 20px;
+        }
+
+        span,
+        span:after,
+        span:before {
+            width: 30px;
+            height: 5px;
+            background-color: color(secondary, 1);
+            border-radius: 2px;
+            transition: all 0.3s;
+            backface-visibility: hidden;
+        }
+
+        &.clicked span {
+            background-color: transparent;
+        }
+
+        &.clicked span:before {
+            transform: rotate(45deg);
+        }
+
+        &.clicked span:after {
+            transform: rotate(-45deg) translate(7px, -8px);
+        }
+    }
+
+    .menu-toggle:hover,
+    .menu-toggle:active,
+    .menu-toggle:focus {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+        @include font-size(5, mobile, true, true, true);
+
+        @include media('>medium') {
+            @include font-size(6, desktop, true, true, true);
+        }
+
+        ul {
+            width: 750px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        a {
+            color: color(typography, 1i);
+        }
+    }
+
+    .intro-text {
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+    }
+}
+
+@include media('<large') {
+    .header {
+        .nav-bar {
+            top: 0;
+            left: 0;
+            position: fixed;
+            padding: 0;
+            width: 300px;
+            height: 100%;
+            z-index: 500;
+            background-color: color(bg, 2);
+            //display: none;
+
+            ul {
+                flex-direction: column;
+                background-color: color(secondary, 1);
+            }
+
+            a {
+                color: color(typography, 1i);
+                @include font-weight(medium);
+            }
+        }
+
+        .menu-toggle {
+            display: flex;
+        }
+    }
+}
