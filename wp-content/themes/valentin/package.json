@@ -36,7 +36,7 @@
     "i": "^0.3.6",
     "imagemin-cli": "^4.0.1",
     "mkdirp": "^0.5.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "npm-run-all": "^4.1.5",
     "onchange": "^5.2.0",
     "postcss-cli": "^6.1.2",
