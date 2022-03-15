@@ -15,7 +15,7 @@
   "dependencies": {
     "@babel/runtime": ">=7.5.0",
     "babel-plugin-transform-class-properties": ">=6.24.1",
-    "lodash-es": "^4.17.14"
+    "lodash-es": "^4.17.21"
   },
   "devDependencies": {
     "@babel/core": ">=7.0.0-0",
